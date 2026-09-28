@@ -1,0 +1,13 @@
+[
+    {
+        "address": "1.0.0.1/24",
+        "name": "stageupnetwork",
+        "priority": 1,
+        "environments": [
+            "Default Environment"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1790324011658,
+        "modificationTimeUnixTimeInMs": 1790324011658
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "entityIdentifier": "stageupcustomlist",
+        "category": "category",
+        "forDBMigration": false,
+        "environments": [
+            "Default Environment"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1790324136915,
+        "modificationTimeUnixTimeInMs": 1790324136915
+    }
+]
