@@ -16,7 +16,7 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
-|stageupPlaybook||
+|stageupPlaybook|test description|
 |stageupblock|An embedded workflow that can receive inputs and return an output.|
 
 

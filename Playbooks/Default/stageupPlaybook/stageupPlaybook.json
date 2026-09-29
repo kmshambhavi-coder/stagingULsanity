@@ -3,13 +3,13 @@
     "id": 0,
     "identifier": "4b21c29f-d9d0-4a89-afd8-4db3652a76ee",
     "version": "1",
-    "isEnabled": false,
+    "isEnabled": true,
     "isDebugMode": false,
     "name": "stageupPlaybook",
     "creator": "f7e2cf1d-7967-4185-a5d2-3bf6b195cbcc",
     "modifiedBy": "f7e2cf1d-7967-4185-a5d2-3bf6b195cbcc",
     "priority": 2,
-    "description": "",
+    "description": "test description",
     "executionScope": 2,
     "environments": [
         "Default Environment"
@@ -18,7 +18,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "4b21c29f-d9d0-4a89-afd8-4db3652a76ee",
     "creationTimeUnixTimeInMs": 1790241876612,
-    "modificationTimeUnixTimeInMs": 1790242410664,
+    "modificationTimeUnixTimeInMs": 1790690066268,
     "trigger": {
         "id": 0,
         "identifier": "57be01ce-4cee-4108-a8a3-5481a106a5ef",
@@ -172,8 +172,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -354,8 +354,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -536,8 +536,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -663,8 +663,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -694,7 +694,7 @@
                 },
                 {
                     "name": "Branches",
-                    "value": "[{\"LogicalOperator\":0,\"Conditions\":[],\"Order\":1,\"IsDefaultBranch\":false,\"Name\":\"Branch\"},{\"LogicalOperator\":0,\"Conditions\":[],\"Order\":2,\"IsDefaultBranch\":true,\"Name\":\"Branch\"}]",
+                    "value": "[{\"LogicalOperator\":0,\"Conditions\":[{\"Operator\":0,\"FieldName\":\"a\",\"Type\":7,\"Value\":\"a\",\"CustomOperatorName\":\"Core Functions.Equal\"}],\"Order\":1,\"IsDefaultBranch\":false,\"Name\":\"Branch\"},{\"LogicalOperator\":0,\"Conditions\":[],\"Order\":2,\"IsDefaultBranch\":true,\"Name\":\"Branch\"}]",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -790,8 +790,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -972,8 +972,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -1154,8 +1154,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -1336,8 +1336,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         },
         {
@@ -1477,7 +1477,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Tag\":\"tag test\",\"Delimiter\":\"test\"}",
+                    "value": "{\"Tag\":\"tag2\",\"Delimiter\":\"test\"}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -1518,8 +1518,8 @@
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1790242410302,
-            "modificationTimeUnixTimeInMs": 1790242410664,
+            "creationTimeUnixTimeInMs": 1790690065955,
+            "modificationTimeUnixTimeInMs": 1790690066268,
             "additionalProperties": {}
         }
     ],
@@ -1595,15 +1595,15 @@
                     "metadata": {
                         "id": 34,
                         "identifier": null,
-                        "title": "Siemplify_Case Tag_2",
+                        "title": "Siemplify_Case Tag_1",
                         "width": 1,
-                        "order": 2,
+                        "order": 3,
                         "description": "This widget highlights the most important items in Case Tag",
                         "type": 3,
                         "templateIdentifier": "c5f6eb43-2b7a-4102-9adf-7e09e3fe52ba",
                         "predefinedWidgetTemplateIdentifier": "d9b15ff1-9aab-d1bd-a74d-304e660d1acf",
                         "actionIdentifier": null,
-                        "stepIdentifier": "d8678bf2-90eb-4042-93d9-049a3ae06a30",
+                        "stepIdentifier": "e1ceb3c8-d986-4681-9f1e-9cccc2413c29",
                         "stepIntegration": null,
                         "blockStepIdentifier": null,
                         "blockStepInstanceName": null,
