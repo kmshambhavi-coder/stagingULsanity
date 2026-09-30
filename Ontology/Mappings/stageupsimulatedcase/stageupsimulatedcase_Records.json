@@ -1,0 +1,13 @@
+[
+    {
+        "id": 0,
+        "source": "stageupsimulatedcase",
+        "familyName": "Default",
+        "familyId": 0,
+        "product": "alertstageupsimulatedcase",
+        "eventName": "rulestageupsimulatedcase",
+        "mappingStatus": null,
+        "changeSource": 1,
+        "exampleEventFields": []
+    }
+]

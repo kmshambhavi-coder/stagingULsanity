@@ -1,0 +1,15 @@
+[
+    {
+        "type": 0,
+        "name": "stageupemailtemplate",
+        "content": "stageupemailtemplate",
+        "creatorUserName": "f7e2cf1d-7967-4185-a5d2-3bf6b195cbcc",
+        "forMigration": false,
+        "environments": [
+            "Default Environment"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1790239063218,
+        "modificationTimeUnixTimeInMs": 1790239063218
+    }
+]

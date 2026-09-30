@@ -1,0 +1,15 @@
+[
+    {
+        "value": "123",
+        "name": "stageuptag",
+        "propertyName": "123",
+        "priority": 1,
+        "isPotentialCaseName": false,
+        "environments": [],
+        "type": 3,
+        "compareType": 2,
+        "id": 14,
+        "creationTimeUnixTimeInMs": 1790323809932,
+        "modificationTimeUnixTimeInMs": 1790323809932
+    }
+]

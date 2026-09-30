@@ -1,0 +1,64 @@
+{
+    "cases": [
+        {
+            "creatorUserId": null,
+            "events": [
+                {
+                    "_fields": {
+                        "baseEventIds": [],
+                        "parentEventId": 0,
+                        "deviceEventClassId": "rulestageupsimulatedcase",
+                        "startTime": "1790325134143",
+                        "endTime": "1790325134143",
+                        "deviceProduct": "alertstageupsimulatedcase"
+                    },
+                    "_rawDataFields": {
+                        "a": "a",
+                        "deviceEventClassId": "eventstageupsimulatedcase",
+                        "deviceProduct": "alertstageupsimulatedcase",
+                        "name": "eventstageupsimulatedcase"
+                    },
+                    "environment": null,
+                    "sourceSystemName": null,
+                    "extensions": []
+                }
+            ],
+            "environment": null,
+            "sourceSystemName": "stageupsimulatedcase",
+            "ticketId": null,
+            "description": null,
+            "displayId": null,
+            "reason": null,
+            "name": "alertstageupsimulatedcase",
+            "deviceVendor": "alertstageupsimulatedcase",
+            "deviceProduct": "alertstageupsimulatedcase",
+            "startTime": 1790325134143,
+            "endTime": 1790325134143,
+            "type": 0,
+            "priority": -1,
+            "ruleGenerator": "rulestageupsimulatedcase",
+            "sourceGroupingIdentifier": null,
+            "playbookTriggerKeywords": [],
+            "extensions": [
+                {
+                    "key": "1",
+                    "value": "1"
+                }
+            ],
+            "attachments": null,
+            "isTrimmed": false,
+            "dataType": 1,
+            "sourceType": 1,
+            "sourceSystemUrl": null,
+            "sourceRuleIdentifier": null,
+            "siemAlertId": null,
+            "updatedFields": [],
+            "alertUpdateSupported": false,
+            "alertMetadata": {},
+            "dataAccessScope": null
+        }
+    ],
+    "type": 0,
+    "connectorIdentifier": null,
+    "debugOutput": null
+}
