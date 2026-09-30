@@ -1,9 +1,0 @@
-[
-    {
-        "id": 1,
-        "name": "stageupdynamicparameter",
-        "type": 0,
-        "defaultValue": "Qwerty",
-        "optionalValues": []
-    }
-]
