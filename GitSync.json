@@ -2,7 +2,8 @@
     "system_version": "6.999.9999.3410",
     "readme_addons": {
         "Integration": {
-            "CaServiceDesk": "Push int readme addon text"
+            "CaServiceDesk": "Push int readme addon text",
+            "Microsoft365Defender": "Push int readme addon text for MS defender"
         },
         "Mappings": {},
         "Visual Family": {},
