@@ -247,5 +247,3 @@ Fetch tickets from CA Desk Manager.
 
 
 
-
-Push int readme addon text for MS defender

@@ -251,5 +251,3 @@ Pull information about incidents and related alerts from Microsoft 365 Defender.
 
 
 
-
-Push int readme addon text for MS defender
