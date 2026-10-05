@@ -1,7 +1,7 @@
 {
-    "isUpdateAvailable": false,
+    "isUpdateAvailable": true,
     "isCustom": false,
-    "isEnabled": false,
+    "isEnabled": true,
     "isRemoteConnector": false,
     "environment": "Default Environment",
     "integration": "GoogleChronicle",
@@ -15,20 +15,6 @@
     "pythonVersion": 3,
     "isAllowlistSupported": true,
     "params": [
-        {
-            "connectorIdentifier": null,
-            "paramName": "Script Timeout (Seconds)",
-            "paramValue": "180",
-            "description": "Timeout limit for the python process running the current script.",
-            "type": 1,
-            "mode": 2,
-            "isDisplayed": true,
-            "isMandatory": true,
-            "isAdvanced": true,
-            "id": 0,
-            "creationTimeUnixTimeInMs": 0,
-            "modificationTimeUnixTimeInMs": 0
-        },
         {
             "connectorIdentifier": null,
             "paramName": "Environment Field Name",
@@ -66,6 +52,20 @@
             "mode": 2,
             "isDisplayed": true,
             "isMandatory": false,
+            "isAdvanced": true,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 0,
+            "modificationTimeUnixTimeInMs": 0
+        },
+        {
+            "connectorIdentifier": null,
+            "paramName": "Script Timeout (Seconds)",
+            "paramValue": "180",
+            "description": "Timeout limit for the python process running the current script.",
+            "type": 1,
+            "mode": 2,
+            "isDisplayed": true,
+            "isMandatory": true,
             "isAdvanced": true,
             "id": 0,
             "creationTimeUnixTimeInMs": 0,
@@ -233,7 +233,12 @@
     "documentationLink": "https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-chronicle#chronicle-alerts-connector",
     "deviceProductField": "alert_type",
     "eventNameField": "event_type",
-    "connectorStatus": null,
+    "connectorStatus": {
+        "connectorIdentifier": "Google Chronicle - Chronicle Alerts Connector_2f32feed-62d1-4923-bb8c-319f41f28161",
+        "connectivityStatus": 1,
+        "amountAlertsInLastDay": 0,
+        "avgAlertsPerDay": 100
+    },
     "isNew": false,
     "agentIdentifier": null
 }

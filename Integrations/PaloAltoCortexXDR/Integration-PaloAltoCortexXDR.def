@@ -61,6 +61,41 @@
     ],
     "IntegrationSupportedActions": [
         {
+            "Name": "Scan Endpoint",
+            "Description": "Use the \"Scan Endpoint\" action to scan endpoints in Palo Alto XDR. Supported Entities: IP Address, Hostname. Note: This action executes asynchronously, requiring you to adjust the script timeout value in the Google SecOps IDE.",
+            "Id": 132,
+            "CreationTimeUnixTimeInMs": 1790239688796,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Enrich Entities",
+            "Description": "Enrich Siemplify Host and IP entities based on the information from the Palo Alto Cortex XDR.",
+            "Id": 137,
+            "CreationTimeUnixTimeInMs": 1790239688796,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Add Hashes to Block List",
+            "Description": "The action will add files which do not exist in the allow or block lists to a block list. Note - only SH256 format  for file hashes is supported.",
+            "Id": 138,
+            "CreationTimeUnixTimeInMs": 1790239688796,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Get Endpoint Agent Report",
+            "Description": "Get the agent report for an endpoint.",
+            "Id": 140,
+            "CreationTimeUnixTimeInMs": 1790239688796,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Execute XQL Search",
+            "Description": "Use \u201cExecute XQL Search\u201d action to fetch information using XQL in Palo Alto XDR. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for action, as needed.",
+            "Id": 131,
+            "CreationTimeUnixTimeInMs": 1790239688796,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
             "Name": "Update an Incident",
             "Description": "The ability to set a specific XDR incident as under investigation, assign to named users, etc.",
             "Id": 130,
@@ -68,30 +103,16 @@
             "ModificationTimeUnixTimeInMs": 1790239688796
         },
         {
-            "Name": "Execute XQL Search",
-            "Description": "Use \u201cExecute XQL Search\u201d action to fetch information using XQL in Palo Alto XDR. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for action, as needed.",
-            "Id": 131,
+            "Name": "Query",
+            "Description": "Get data of a specific incident including alerts and key artifacts.",
+            "Id": 134,
             "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
-        },
-        {
-            "Name": "Scan Endpoint",
-            "Description": "Use the \"Scan Endpoint\" action to scan endpoints in Palo Alto XDR. Supported Entities: IP Address, Hostname. Note: This action executes asynchronously, requiring you to adjust the script timeout value in the Google SecOps IDE.",
-            "Id": 132,
-            "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Ping",
             "Description": "Test connectivity to Palo Alto Cortex XDR",
             "Id": 133,
-            "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
-        },
-        {
-            "Name": "Query",
-            "Description": "Get data of a specific incident including alerts and key artifacts.",
-            "Id": 134,
             "CreationTimeUnixTimeInMs": 1790239688796,
             "ModificationTimeUnixTimeInMs": 1790239688796
         },
@@ -110,39 +131,18 @@
             "ModificationTimeUnixTimeInMs": 1790239688796
         },
         {
-            "Name": "Enrich Entities",
-            "Description": "Enrich Siemplify Host and IP entities based on the information from the Palo Alto Cortex XDR.",
-            "Id": 137,
-            "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
-        },
-        {
-            "Name": "Add Hashes to Block List",
-            "Description": "The action will add files which do not exist in the allow or block lists to a block list. Note - only SH256 format  for file hashes is supported.",
-            "Id": 138,
-            "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
-        },
-        {
             "Name": "Get Incident Details",
             "Description": "Use \u201cGet Incident Details\u201d action to fetch information about the incident in Palo Alto XDR.",
             "Id": 139,
             "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
-        },
-        {
-            "Name": "Get Endpoint Agent Report",
-            "Description": "Get the agent report for an endpoint.",
-            "Id": 140,
-            "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Download File",
             "Description": "Use the \u201cDownload File\u201d action to download files from endpoints in Palo Alto XDR. Supported Entities: IP Address, Hostname. Note: This action executes asynchronously, requiring you to adjust the script timeout value in the Google SecOps IDE.",
             "Id": 141,
             "CreationTimeUnixTimeInMs": 1790239688796,
-            "ModificationTimeUnixTimeInMs": 1790239688796
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Add Comment To Incident",

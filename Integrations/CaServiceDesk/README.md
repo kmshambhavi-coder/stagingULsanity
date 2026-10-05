@@ -16,26 +16,26 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|zeep-4.2.1-py3-none-any.whl|
-|platformdirs-4.9.6-py3-none-any.whl|
+|arrow-1.4.0-py3-none-any.whl|
 |idna-3.13-py3-none-any.whl|
-|urllib3-2.6.3-py3-none-any.whl|
-|TIPCommon-1.0.12-py2.py3-none-any.whl|
-|requests-2.33.1-py3-none-any.whl|
-|chardet-7.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
-|certifi-2026.4.22-py3-none-any.whl|
-|isodate-0.7.2-py3-none-any.whl|
-|six-1.17.0-py2.py3-none-any.whl|
 |lxml-6.1.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl|
-|tzdata-2026.2-py2.py3-none-any.whl|
-|pytz-2026.1.post1-py2.py3-none-any.whl|
-|charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
-|defusedxml-0.7.1-py2.py3-none-any.whl|
+|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
+|requests-2.33.1-py3-none-any.whl|
+|six-1.17.0-py2.py3-none-any.whl|
 |attrs-26.1.0-py3-none-any.whl|
 |requests_toolbelt-1.0.0-py2.py3-none-any.whl|
-|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|arrow-1.4.0-py3-none-any.whl|
+|pytz-2026.1.post1-py2.py3-none-any.whl|
+|platformdirs-4.9.6-py3-none-any.whl|
+|defusedxml-0.7.1-py2.py3-none-any.whl|
+|chardet-7.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
+|zeep-4.2.1-py3-none-any.whl|
+|isodate-0.7.2-py3-none-any.whl|
+|certifi-2026.4.22-py3-none-any.whl|
 |requests_file-3.0.1-py2.py3-none-any.whl|
+|urllib3-2.6.3-py3-none-any.whl|
+|tzdata-2026.2-py2.py3-none-any.whl|
+|TIPCommon-1.0.12-py2.py3-none-any.whl|
+|charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
 
 
 ## Actions
@@ -48,6 +48,97 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Ticket ID|Incident's ref num. e.g. 338|True|String||
 |Comment|Comment to add to an incident|True|String||
+
+
+
+#### Create Ticket
+Create new ticket in CA ServiceDesk.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Summary|Incident's summary text|True|String||
+|Description|Incident's description text|True|String||
+|Category Name|Incident's area name. e.g. Software|True|String||
+|Group Name|Group name. e.g. Test|True|String||
+|Username|User name|True|String||
+|Custom Fields|Specify a JSON object containing all of the needed fields and values. The structure is the following: {"field”:”value"}. If the same field is provided in the “Custom Fields“ parameter and other parameters, the “Custom Fields“  parameter value has priority.|False|String||
+
+
+
+#### Wait For Status Change
+Waiting until ticket status is changed.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Ticket ID|Target ticket ID.|True|String||
+|Expected Ticket Status Name|Expected status.|True|String||
+
+
+
+##### JSON Results
+```json
+{"severity.sym": "None", "resolution_code.sym": "None", "urgency.sym": "Test", "resolve_date": "None", "caused_by_chg.chg_ref_num": "None", "log_agent.combo_name": "Test", "requested_by.combo_name": "None", "resolution_method.sym": "None", "problem.ref_num": "None", "change.chg_ref_num": "None", "affected_service.name": "None", "priority.sym": "3", "customer.combo_name": "Test", "call_back_date": "None", "assignee.combo_name": "TestUser", "status": "OP", "group.combo_name": "None", "impact.sym": "Test Group", "description": "Test", "symptom_code.sym": "None", "external_system_ticket": "None", "last_mod_dt": "1547368725", "active": "1", "open_date": "1517743983", "category.sym": "None", "status.sym": "Open", "persistent_id": "cr:123456", "summary": "test", "close_date": "None"}
+```
+
+
+
+#### Assign To Group
+Assign an incident to a particular group
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Ticket ID|Incident number|True|String||
+|Group|Group to assign the incident to|True|String||
+
+
+
+#### Sync Ticket History
+Fetch and attach the entire ticket history to an alert
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Comment Type Field|Ticket type. e.g. type.sym|False|String||
+|Analyst Name Field|Analyst Name. e.g. analyst.combo_name|False|String||
+|TimeStamp Field|Time field e.g. time_stamap.|False|String||
+
+
+
+##### JSON Results
+```json
+[{"time_stamp": "1546944096", "analyst.combo_name": "Analyst", "type.sym": "Log Comment", "description": "Tests Comments."}]
+```
+
+
+
+#### Close Ticket
+Close incident in CA ServiceDesk manager
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Ticket ID|Incident number|True|String||
+|Close Reason|description which can be used in the Close activity log.|True|String||
+
+
+
+#### Change Ticket Status
+Change CA Desk Manager ticket status
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Ticket ID|Incident number|True|String||
+|Status|Incident status to change. e.g. Closed|True|String||
 
 
 
@@ -73,88 +164,9 @@ Timeout - 600 Seconds
 
 
 
-#### Wait For Status Change
-Waiting until ticket status is changed.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Ticket ID|Target ticket ID.|True|String||
-|Expected Ticket Status Name|Expected status.|True|String||
-
-
-
-##### JSON Results
-```json
-{"severity.sym": "None", "resolution_code.sym": "None", "urgency.sym": "Test", "resolve_date": "None", "caused_by_chg.chg_ref_num": "None", "log_agent.combo_name": "Test", "requested_by.combo_name": "None", "resolution_method.sym": "None", "problem.ref_num": "None", "change.chg_ref_num": "None", "affected_service.name": "None", "priority.sym": "3", "customer.combo_name": "Test", "call_back_date": "None", "assignee.combo_name": "TestUser", "status": "OP", "group.combo_name": "None", "impact.sym": "Test Group", "description": "Test", "symptom_code.sym": "None", "external_system_ticket": "None", "last_mod_dt": "1547368725", "active": "1", "open_date": "1517743983", "category.sym": "None", "status.sym": "Open", "persistent_id": "cr:123456", "summary": "test", "close_date": "None"}
-```
-
-
-
-#### Close Ticket
-Close incident in CA ServiceDesk manager
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Ticket ID|Incident number|True|String||
-|Close Reason|description which can be used in the Close activity log.|True|String||
-
-
-
-#### Sync Ticket History
-Fetch and attach the entire ticket history to an alert
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Comment Type Field|Ticket type. e.g. type.sym|False|String||
-|Analyst Name Field|Analyst Name. e.g. analyst.combo_name|False|String||
-|TimeStamp Field|Time field e.g. time_stamap.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"time_stamp": "1546944096", "analyst.combo_name": "Analyst", "type.sym": "Log Comment", "description": "Tests Comments."}]
-```
-
-
-
-#### Assign To Group
-Assign an incident to a particular group
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Ticket ID|Incident number|True|String||
-|Group|Group to assign the incident to|True|String||
-
-
-
 #### Ping
 Test Connectivity
 Timeout - 600 Seconds
-
-
-
-#### Create Ticket
-Create new ticket in CA ServiceDesk.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Summary|Incident's summary text|True|String||
-|Description|Incident's description text|True|String||
-|Category Name|Incident's area name. e.g. Software|True|String||
-|Group Name|Group name. e.g. Test|True|String||
-|Username|User name|True|String||
-|Custom Fields|Specify a JSON object containing all of the needed fields and values. The structure is the following: {"field”:”value"}. If the same field is provided in the “Custom Fields“ parameter and other parameters, the “Custom Fields“  parameter value has priority.|False|String||
 
 
 
@@ -170,35 +182,10 @@ Timeout - 600 Seconds
 
 
 
-#### Change Ticket Status
-Change CA Desk Manager ticket status
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Ticket ID|Incident number|True|String||
-|Status|Incident status to change. e.g. Closed|True|String||
-
-
-
 
 
 
 ## Jobs
-
-#### CA Close Ticket In CA For Closed Case
-Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|API Root|True|String|http://x.x.x.x:<port>|
-|Username|True|String||
-|Password|True|String||
-|Group Filter|False|String|Test|
-|Group Field|True|String|group.combo_name|
-|Ticket Final Status|True|String|Closed|
-|Script Name|True|String|TEST CLOSE|
 
 #### Sync Comments
 Sync comments from CA Desk Manager to Siemplify.
@@ -215,6 +202,19 @@ Sync comments from CA Desk Manager to Siemplify.
 |Analyst Type Field|False|Boolean||
 |Time Stamp Field|False|Boolean||
 |Timezone String|False|Boolean|UTC|
+
+#### CA Close Ticket In CA For Closed Case
+Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|API Root|True|String|http://x.x.x.x:<port>|
+|Username|True|String||
+|Password|True|String||
+|Group Filter|False|String|Test|
+|Group Field|True|String|group.combo_name|
+|Ticket Final Status|True|String|Closed|
+|Script Name|True|String|TEST CLOSE|
 
 
 

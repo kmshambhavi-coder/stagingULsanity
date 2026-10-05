@@ -19,82 +19,44 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|certifi-2026.2.25-py3-none-any.whl|
-|idna-3.11-py3-none-any.whl|
-|pycparser-3.0-py3-none-any.whl|
-|cachetools-6.2.4-py3-none-any.whl|
-|PyJWT-2.9.0-py3-none-any.whl|
-|urllib3-2.6.3-py3-none-any.whl|
-|requests-2.32.5-py3-none-any.whl|
-|httplib2-0.31.2-py3-none-any.whl|
-|googleapis_common_protos-1.73.0-py3-none-any.whl|
-|google_auth-2.47.0-py3-none-any.whl|
-|cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl|
-|pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|pyparsing-3.3.2-py3-none-any.whl|
-|rsa-4.9.1-py3-none-any.whl|
 |httpcore-1.0.9-py3-none-any.whl|
 |chardet-5.2.0-py3-none-any.whl|
-|TIPCommon-2.3.4-py3-none-any.whl|
-|google_api_core-2.30.0-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|google_api_python_client-2.188.0-py3-none-any.whl|
-|protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl|
-|typing_extensions-4.15.0-py3-none-any.whl|
+|google_auth-2.47.0-py3-none-any.whl|
+|pyparsing-3.3.2-py3-none-any.whl|
+|httplib2-0.31.2-py3-none-any.whl|
 |google_auth_httplib2-0.3.0-py3-none-any.whl|
-|httpx-0.28.1-py3-none-any.whl|
-|pyopenssl-25.3.0-py3-none-any.whl|
-|anyio-4.12.1-py3-none-any.whl|
-|pyasn1_modules-0.4.2-py3-none-any.whl|
-|uritemplate-4.2.0-py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|charset_normalizer-3.4.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
-|h11-0.16.0-py3-none-any.whl|
-|proto_plus-1.27.1-py3-none-any.whl|
-|pyasn1-0.6.3-py3-none-any.whl|
-|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
 |cryptography-46.0.5-cp311-abi3-manylinux_2_34_x86_64.whl|
+|certifi-2026.2.25-py3-none-any.whl|
+|idna-3.11-py3-none-any.whl|
+|requests-2.32.5-py3-none-any.whl|
+|h11-0.16.0-py3-none-any.whl|
+|rsa-4.9.1-py3-none-any.whl|
+|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
+|pycparser-3.0-py3-none-any.whl|
+|pyasn1_modules-0.4.2-py3-none-any.whl|
+|google_api_python_client-2.188.0-py3-none-any.whl|
+|pyopenssl-25.3.0-py3-none-any.whl|
+|TIPCommon-2.3.4-py3-none-any.whl|
+|proto_plus-1.27.1-py3-none-any.whl|
+|uritemplate-4.2.0-py3-none-any.whl|
+|charset_normalizer-3.4.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
+|pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|googleapis_common_protos-1.73.0-py3-none-any.whl|
+|httpx-0.28.1-py3-none-any.whl|
+|PyJWT-2.9.0-py3-none-any.whl|
+|urllib3-2.6.3-py3-none-any.whl|
+|cachetools-6.2.4-py3-none-any.whl|
+|google_api_core-2.30.0-py3-none-any.whl|
+|cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|anyio-4.12.1-py3-none-any.whl|
+|typing_extensions-4.15.0-py3-none-any.whl|
+|protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl|
+|pyasn1-0.6.3-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
 
 
 ## Actions
-#### Execute Query
-Execute hunting query in Microsoft 365 Defender.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Table Names|Specify what tables should be queried.|True|String||
-|Query|Specify the query that needs to be executed. Use this parameter to provide |where clauses. Note: you don’t need to provide time filter, limiting and sorting.|False|String||
-|Time Frame|Specify a time frame for the results. If "Custom" is selected, you also need to provide "Start Time".|False|List|Last Hour|
-|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601|False|String||
-|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time.|False|String||
-|Fields To Return|Specify what fields to return.|False|String||
-|Sort Field|Specify what parameter should be used for sorting.|False|String|Timestamp|
-|Sort Order|Specify the order of sorting.|False|List|ASC|
-|Max Results To Return|Specify how many results to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"Timestamp":"2021-04-12T07:25:00Z","AlertId":"fa7a318954-6c4c-eaab-xxx-xxxxxxxxxx","Title":"CC_Sensitive information","Category":"InitialAccess","Severity":"Medium","ServiceSource":"Microsoft Defender for Office 365","DetectionSource":"Microsoft Defender for Office 365","AttackTechniques":""}]
-```
-
-
-
-#### Add Comment To Incident
-Add comment to incident in Microsoft 365 Defender.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Incident ID|Specify the id of the incident that needs to be updated.|True|String||
-|Comment|Specify the comment that needs to be added to the incident.|True|String||
-
-
-
 #### Update Incident
 Update incident in Microsoft 365 Defender.
 Timeout - 600 Seconds
@@ -107,12 +69,6 @@ Timeout - 600 Seconds
 |Classification|Specify what classification to set for the incident..|False|List|Select One|
 |Determination|Specify what determination to set for the incident. Note: determination can only be set, when classification is true positive.|False|List|Select One|
 |Assign To|Specify to whom to assign this incident.|False|String||
-
-
-
-#### Ping
-Test connectivity to the Microsoft 365 Defender with parameters provided at the integration configuration page on the Marketplace tab.
-Timeout - 600 Seconds
 
 
 
@@ -165,6 +121,50 @@ Timeout - 600 Seconds
 ```json
 [{"Timestamp":"2021-04-29T10:04:27.9049321Z","AlertId":"","ServiceSource":"","EntityType":"","EvidenceRole":"","EvidenceDirection":"","FileName":"","FolderPath":"","SHA1":"","SHA256":"","FileSize":null,"ThreatFamily":"","RemoteIP":"","RemoteUrl":"","AccountName":"","AccountDomain":"","AccountSid":"","AccountObjectId":"","AccountUpn":"","DeviceId":"4404d21581b65a3dbxxxxxxxxxxxxxxxxxxxxxxxxxxx","DeviceName":"desktop-xxxxxx","LocalIP":"","NetworkMessageId":"","EmailSubject":"","ApplicationId":null,"Application":"","OAuthApplicationId":"","ProcessCommandLine":"","AdditionalFields":"{\"IsLocalLogon\":true}","RegistryKey":"","RegistryValueName":"","RegistryValueData":"","Title":"","Category":"","Severity":"","DetectionSource":"","AttackTechniques":"","ClientVersion":"","PublicIP":"","OSArchitecture":"","OSPlatform":"","OSBuild":null,"IsAzureADJoined":null,"AadDeviceId":"","LoggedOnUsers":"","RegistryDeviceTag":"","OSVersion":"","MachineGroup":"","ReportId":2826,"OnboardingStatus":"","DeviceCategory":"","DeviceType":"","DeviceSubType":"","Model":"","Vendor":"","OSDistribution":"","OSVersionInfo":"","MergedDeviceIds":"","MergedToDeviceId":"","DeviceObjectId":"","NetworkAdapterName":"","MacAddress":"","NetworkAdapterType":"","NetworkAdapterStatus":"","TunnelType":"","ConnectedNetworks":"","DnsAddresses":"","IPv4Dhcp":"","IPv6Dhcp":"","DefaultGateways":"","IPAddresses":"","NetworkAdapterVendor":"","ActionType":"LogonFailed","LogonType":"Network","Protocol":"Kerberos","FailureReason":"","IsLocalAdmin":null,"LogonId":null,"RemoteDeviceName":"","RemoteIPType":"","RemotePort":null,"InitiatingProcessAccountDomain":"nt authority","InitiatingProcessAccountName":"system","InitiatingProcessAccountSid":"S-1-5-18","InitiatingProcessAccountUpn":"","InitiatingProcessAccountObjectId":"","InitiatingProcessIntegrityLevel":"","InitiatingProcessTokenElevation":"None","InitiatingProcessSHA1":"75c5a97f521f760e32a4a9639axxxxxxxxxxxxxx","InitiatingProcessSHA256":"","InitiatingProcessMD5":"9520a99e77d6196d0d0xxxxxxxxxxxxx","InitiatingProcessFileName":"svchost.exe","InitiatingProcessFileSize":null,"InitiatingProcessVersionInfoCompanyName":"","InitiatingProcessVersionInfoProductName":"","InitiatingProcessVersionInfoProductVersion":"","InitiatingProcessVersionInfoInternalFileName":"","InitiatingProcessVersionInfoOriginalFileName":"","InitiatingProcessVersionInfoFileDescription":"","InitiatingProcessId":3020,"InitiatingProcessCommandLine":"svchost.exe -k netsvcs -p -s Winmgmt","InitiatingProcessCreationTime":"2021-04-29T09:59:11.8716716Z","InitiatingProcessFolderPath":"C:\\Windows\\System32","InitiatingProcessParentId":728,"InitiatingProcessParentFileName":"\\Device\\HarddiskVolume4\\Windows\\System32\\services.exe","InitiatingProcessParentCreationTime":"2021-04-29T09:59:09.9224656Z","AppGuardContainerId":""}]
 ```
+
+
+
+#### Execute Query
+Execute hunting query in Microsoft 365 Defender.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Table Names|Specify what tables should be queried.|True|String||
+|Query|Specify the query that needs to be executed. Use this parameter to provide |where clauses. Note: you don’t need to provide time filter, limiting and sorting.|False|String||
+|Time Frame|Specify a time frame for the results. If "Custom" is selected, you also need to provide "Start Time".|False|List|Last Hour|
+|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601|False|String||
+|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time.|False|String||
+|Fields To Return|Specify what fields to return.|False|String||
+|Sort Field|Specify what parameter should be used for sorting.|False|String|Timestamp|
+|Sort Order|Specify the order of sorting.|False|List|ASC|
+|Max Results To Return|Specify how many results to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"Timestamp":"2021-04-12T07:25:00Z","AlertId":"fa7a318954-6c4c-eaab-xxx-xxxxxxxxxx","Title":"CC_Sensitive information","Category":"InitialAccess","Severity":"Medium","ServiceSource":"Microsoft Defender for Office 365","DetectionSource":"Microsoft Defender for Office 365","AttackTechniques":""}]
+```
+
+
+
+#### Ping
+Test connectivity to the Microsoft 365 Defender with parameters provided at the integration configuration page on the Marketplace tab.
+Timeout - 600 Seconds
+
+
+
+#### Add Comment To Incident
+Add comment to incident in Microsoft 365 Defender.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Incident ID|Specify the id of the incident that needs to be updated.|True|String||
+|Comment|Specify the comment that needs to be added to the incident.|True|String||
 
 
 

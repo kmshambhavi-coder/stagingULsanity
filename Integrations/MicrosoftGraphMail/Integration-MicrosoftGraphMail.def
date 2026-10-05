@@ -149,91 +149,147 @@
             "Description": "Send email with the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: Action is not running on Google SecOps entities.",
             "Id": 183,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Send Thread Reply",
             "Description": "Send a message as a reply to the email thread. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.",
             "Id": 184,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Remove Block Sender",
             "Description": "Remove specified email senders from a message rule in the given Mailbox. If the rule becomes empty, it will be deleted.",
             "Id": 185,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Wait For Email From User",
             "Description": "Wait for user's response based on an email sent via the \"Send Mail\" action. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
             "Id": 186,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Search Emails",
             "Description": "Execute email search in the configured mailbox based on provided search criteria. If permissions allow, action can search in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities. ",
             "Id": 187,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Delete Email",
             "Description": "Delete one or multiple emails from the mailbox based on provided search criteria. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
             "Id": 188,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Extract Data from Attached EML",
             "Description": "Extract data from the email EML attachments and return it in the actions JSON result. The action supports .eml, .msg, .ics file formats. Note: Action is not running on SecOps entities.",
             "Id": 189,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Send Vote Email",
             "Description": "Send email with easy answering options, to allow stakeholders to be included in workflow processes. This action uses Google SecOps HTML templates to format the email. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: This action is not running on Google SecOps entities.",
             "Id": 190,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Delete Inbox Rules",
-            "Description": "Delete a specified inbox message rule for the given Mailboxes.",
-            "Id": 191,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Get Mailbox Account Out Of Facility Settings",
             "Description": "Get the mailbox account out of facility (OOF) settings for the provided Google SecOps User entity. Note: This action uses the beta version of Microsoft Graph APIs.",
             "Id": 192,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Mark Email as Not Junk",
             "Description": "Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
             "Id": 193,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Wait For Vote Email Results",
             "Description": "Wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the IDE accordingly. This action is not working on Google SecOps entities.",
             "Id": 194,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Forward Email",
             "Description": "Forward email including previous threads. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Siemplify entities.",
             "Id": 195,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Download Attachments from Email",
+            "Description": "Download attachments from an email based on the provided criteria. Note: Action is not running on SecOps entities. Action is running asynchronously. Adjust the script timeout value in the SecOps IDE for action as needed. If the downloaded attachments contain \"/\" or \"\\\" characters in their names, the characters will be replaced with the '_' character.",
+            "Id": 197,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Move Email To Folder",
+            "Description": "Move one or multiple emails from source email folder to another folder in the mailbox. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
+            "Id": 199,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Block Sender",
+            "Description": "Block specified email senders by adding them to a message rule in the given Mailbox. If the rule does not exist, it will be created.",
+            "Id": 200,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "List Rules",
+            "Description": "List all message rules for a specific mailbox using Microsoft Graph API.",
+            "Id": 201,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Mark Email as Junk",
+            "Description": "Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
+            "Id": 202,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Save Email to the Case",
+            "Description": "Save email or email attachments to the Chronicle Case Wall. If permissions allow, action can save emails from mailboxes other than the one provided in the integration configuration. Action is not working on Chronicle entities.",
+            "Id": 203,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Block Domain",
+            "Description": "Block specified email domains by adding them to a message rule in the given Mailbox. If the rule does not exist, it will be created.",
+            "Id": 204,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Send Email",
+            "Description": "Send email from a specific mailbox to an arbitrary list of recipients. Action can send either plain text or html emails. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.",
+            "Id": 205,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Remove Block Domain",
+            "Description": "Remove specified email domains from a message rule in the given Mailbox. If the rule becomes empty, it will be deleted.",
+            "Id": 198,
+            "CreationTimeUnixTimeInMs": 1790688488754,
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Ping",
@@ -243,67 +299,11 @@
             "ModificationTimeUnixTimeInMs": 1790688488754
         },
         {
-            "Name": "Download Attachments from Email",
-            "Description": "Download attachments from an email based on the provided criteria. Note: Action is not running on SecOps entities. Action is running asynchronously. Adjust the script timeout value in the SecOps IDE for action as needed. If the downloaded attachments contain \"/\" or \"\\\" characters in their names, the characters will be replaced with the '_' character.",
-            "Id": 197,
+            "Name": "Delete Inbox Rules",
+            "Description": "Delete a specified inbox message rule for the given Mailboxes.",
+            "Id": 191,
             "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Remove Block Domain",
-            "Description": "Remove specified email domains from a message rule in the given Mailbox. If the rule becomes empty, it will be deleted.",
-            "Id": 198,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Move Email To Folder",
-            "Description": "Move one or multiple emails from source email folder to another folder in the mailbox. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
-            "Id": 199,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Block Sender",
-            "Description": "Block specified email senders by adding them to a message rule in the given Mailbox. If the rule does not exist, it will be created.",
-            "Id": 200,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "List Rules",
-            "Description": "List all message rules for a specific mailbox using Microsoft Graph API.",
-            "Id": 201,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Mark Email as Junk",
-            "Description": "Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
-            "Id": 202,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Save Email to the Case",
-            "Description": "Save email or email attachments to the Chronicle Case Wall. If permissions allow, action can save emails from mailboxes other than the one provided in the integration configuration. Action is not working on Chronicle entities.",
-            "Id": 203,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Block Domain",
-            "Description": "Block specified email domains by adding them to a message rule in the given Mailbox. If the rule does not exist, it will be created.",
-            "Id": 204,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
-        },
-        {
-            "Name": "Send Email",
-            "Description": "Send email from a specific mailbox to an arbitrary list of recipients. Action can send either plain text or html emails. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.",
-            "Id": 205,
-            "CreationTimeUnixTimeInMs": 1790688488754,
-            "ModificationTimeUnixTimeInMs": 1790688488754
+            "ModificationTimeUnixTimeInMs": 1791117678614
         }
     ],
     "Categories": [

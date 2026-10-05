@@ -61,74 +61,74 @@
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Add Comment",
-            "Description": "Add comment to a CA ServiceDesk incident",
-            "Id": 228,
+            "Name": "Sync Ticket History",
+            "Description": "Fetch and attach the entire ticket history to an alert",
+            "Id": 222,
             "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
-        },
-        {
-            "Name": "Assign Incident To User",
-            "Description": "Assign an incident to a specific user",
-            "Id": 229,
-            "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
-        },
-        {
-            "Name": "Assign To Group",
-            "Description": "Assign an incident to a particular group",
-            "Id": 231,
-            "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
-        },
-        {
-            "Name": "Change Ticket Status",
-            "Description": "Change CA Desk Manager ticket status",
-            "Id": 226,
-            "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
-        },
-        {
-            "Name": "Close Ticket",
-            "Description": "Close incident in CA ServiceDesk manager",
-            "Id": 225,
-            "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Create Ticket",
             "Description": "Create new ticket in CA ServiceDesk.",
             "Id": 223,
             "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
-        },
-        {
-            "Name": "Ping",
-            "Description": "Test Connectivity",
-            "Id": 227,
-            "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Search Tickets",
             "Description": "Search tickets in CA Desk Manager by field",
             "Id": 224,
             "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
-            "Name": "Sync Ticket History",
-            "Description": "Fetch and attach the entire ticket history to an alert",
-            "Id": 222,
+            "Name": "Close Ticket",
+            "Description": "Close incident in CA ServiceDesk manager",
+            "Id": 225,
             "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Change Ticket Status",
+            "Description": "Change CA Desk Manager ticket status",
+            "Id": 226,
+            "CreationTimeUnixTimeInMs": 1790839281959,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test Connectivity",
+            "Id": 227,
+            "CreationTimeUnixTimeInMs": 1790839281959,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Add Comment",
+            "Description": "Add comment to a CA ServiceDesk incident",
+            "Id": 228,
+            "CreationTimeUnixTimeInMs": 1790839281959,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Assign Incident To User",
+            "Description": "Assign an incident to a specific user",
+            "Id": 229,
+            "CreationTimeUnixTimeInMs": 1790839281959,
+            "ModificationTimeUnixTimeInMs": 1791117678614
         },
         {
             "Name": "Wait For Status Change",
             "Description": "Waiting until ticket status is changed.",
             "Id": 230,
             "CreationTimeUnixTimeInMs": 1790839281959,
-            "ModificationTimeUnixTimeInMs": 1790839281959
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Assign To Group",
+            "Description": "Assign an incident to a particular group",
+            "Id": 231,
+            "CreationTimeUnixTimeInMs": 1790839281959,
+            "ModificationTimeUnixTimeInMs": 1791117678614
         }
     ],
     "Categories": [

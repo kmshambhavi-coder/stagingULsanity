@@ -97,30 +97,9 @@
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Add Comment To Incident",
-            "Description": "Add comment to incident in Microsoft 365 Defender.",
-            "Id": 221,
-            "CreationTimeUnixTimeInMs": 1790775538396,
-            "ModificationTimeUnixTimeInMs": 1790775538396
-        },
-        {
-            "Name": "Execute Custom Query",
-            "Description": "Execute a custom hunting query in Microsoft 365 Defender.",
-            "Id": 220,
-            "CreationTimeUnixTimeInMs": 1790775538396,
-            "ModificationTimeUnixTimeInMs": 1790775538396
-        },
-        {
-            "Name": "Execute Entity Query",
-            "Description": "Execute a hunting query based on entities in Microsoft 365 Defender. Note: this action prepares a where filter based on entities. Please refer to the documentation for more details. Supported entities: IP, Host, User, Hash, URL.",
-            "Id": 217,
-            "CreationTimeUnixTimeInMs": 1790775538396,
-            "ModificationTimeUnixTimeInMs": 1790775538396
-        },
-        {
-            "Name": "Execute Query",
-            "Description": "Execute hunting query in Microsoft 365 Defender.",
-            "Id": 218,
+            "Name": "Update Incident",
+            "Description": "Update incident in Microsoft 365 Defender.",
+            "Id": 216,
             "CreationTimeUnixTimeInMs": 1790775538396,
             "ModificationTimeUnixTimeInMs": 1790775538396
         },
@@ -132,11 +111,32 @@
             "ModificationTimeUnixTimeInMs": 1790775538396
         },
         {
-            "Name": "Update Incident",
-            "Description": "Update incident in Microsoft 365 Defender.",
-            "Id": 216,
+            "Name": "Add Comment To Incident",
+            "Description": "Add comment to incident in Microsoft 365 Defender.",
+            "Id": 221,
             "CreationTimeUnixTimeInMs": 1790775538396,
             "ModificationTimeUnixTimeInMs": 1790775538396
+        },
+        {
+            "Name": "Execute Entity Query",
+            "Description": "Execute a hunting query based on entities in Microsoft 365 Defender. Note: this action prepares a where filter based on entities. Please refer to the documentation for more details. Supported entities: IP, Host, User, Hash, URL.",
+            "Id": 217,
+            "CreationTimeUnixTimeInMs": 1790775538396,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Execute Query",
+            "Description": "Execute hunting query in Microsoft 365 Defender.",
+            "Id": 218,
+            "CreationTimeUnixTimeInMs": 1790775538396,
+            "ModificationTimeUnixTimeInMs": 1791117678614
+        },
+        {
+            "Name": "Execute Custom Query",
+            "Description": "Execute a custom hunting query in Microsoft 365 Defender.",
+            "Id": 220,
+            "CreationTimeUnixTimeInMs": 1790775538396,
+            "ModificationTimeUnixTimeInMs": 1791117678614
         }
     ],
     "Categories": [

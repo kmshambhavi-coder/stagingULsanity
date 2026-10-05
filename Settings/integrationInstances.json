@@ -329,6 +329,195 @@
         }
     },
     {
+        "environment": "Default Environment",
+        "integrationIdentifier": "Microsoft365Defender",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "propertyName": "Login API Root",
+                    "value": "https://login.microsoftonline.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 219,
+                    "propertyDisplayName": "Login API Root",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "Graph API Root",
+                    "value": "https://graph.microsoft.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 220,
+                    "propertyDisplayName": "Graph API Root",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "API Root",
+                    "value": "https://api.security.microsoft.com",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 221,
+                    "propertyDisplayName": "API Root",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "Tenant ID",
+                    "value": "d48f52ca-5b1a-4708-8ed0-ebb98a26a46a",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 222,
+                    "propertyDisplayName": "Tenant ID",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "Client ID",
+                    "value": "e4fc6454-754d-47f7-bbdb-045fad65dcf5",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 223,
+                    "propertyDisplayName": "Client ID",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "Client Secret",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "id": 224,
+                    "propertyDisplayName": "Client Secret",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "Verify SSL",
+                    "value": "True",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "id": 225,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                },
+                {
+                    "propertyName": "AgentIdentifier",
+                    "value": null,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "id": 227,
+                    "propertyDisplayName": "Agent",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "Microsoft365Defender",
+                    "integrationInstance": "01a0f28b-45a7-7e80-8896-25e09a2de114"
+                }
+            ]
+        }
+    },
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "CaServiceDesk",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "propertyName": "Api Root",
+                    "value": "http://<IP OR FQDN>:<PORT>/",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 228,
+                    "propertyDisplayName": "Api Root",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CaServiceDesk",
+                    "integrationInstance": "01a0f65b-431f-74b9-81b9-8fd555a45f47"
+                },
+                {
+                    "propertyName": "Username",
+                    "value": "aa",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 229,
+                    "propertyDisplayName": "Username",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CaServiceDesk",
+                    "integrationInstance": "01a0f65b-431f-74b9-81b9-8fd555a45f47"
+                },
+                {
+                    "propertyName": "Password",
+                    "value": "***************",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "id": 230,
+                    "propertyDisplayName": "Password",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CaServiceDesk",
+                    "integrationInstance": "01a0f65b-431f-74b9-81b9-8fd555a45f47"
+                },
+                {
+                    "propertyName": "Ticket Fields",
+                    "value": "customer.combo_name,category.sym,status.sym,priority.sym,active,log_agent.combo_name,assignee.combo_name,group.combo_name,affected_service.name,severity.sym,urgency.sym,impact.sym,problem.ref_num,resolution_code.sym,call_back_date,change.chg_ref_num,caused_by_chg.chg_ref_num,external_system_ticket,resolution_method.sym,symptom_code.sym,requested_by.combo_name,persistent_id,summary,description,open_date,last_mod_dt,resolve_date,close_date,ref_num",
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "id": 231,
+                    "propertyDisplayName": "Ticket Fields",
+                    "propertyDescription": "",
+                    "integrationIdentifier": "CaServiceDesk",
+                    "integrationInstance": "01a0f65b-431f-74b9-81b9-8fd555a45f47"
+                },
+                {
+                    "propertyName": "AgentIdentifier",
+                    "value": null,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "id": 233,
+                    "propertyDisplayName": "Agent",
+                    "propertyDescription": null,
+                    "integrationIdentifier": "CaServiceDesk",
+                    "integrationInstance": "01a0f65b-431f-74b9-81b9-8fd555a45f47"
+                }
+            ]
+        }
+    },
+    {
         "environment": "*",
         "integrationIdentifier": "GoogleSecOpsAiAgents",
         "settings": {
